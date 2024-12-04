@@ -1,0 +1,91 @@
+/* Basic Admin Panel Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#sidebar ul li a:hover {
+    background-color: #555;
+}
+
+#adminContent {
+    margin-left: 220px;
+    padding: 20px;
+    width: calc(100% - 220px);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.userItem, .postItem, .commentItem {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+.userItem p, .postItem p, .commentItem p {
+    margin: 0;
+}
+

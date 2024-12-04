@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Control Panel</title>
+    <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Control Panel</h1>
+        <button onclick="logoutAdmin()">Logout</button>
+    </header>
+    
+    <!-- Sidebar with Navigation Links -->
+    <nav id="sidebar">
+        <ul>
+            <li><a href="#manageUsers">Manage Users</a></li>
+            <li><a href="#managePosts">Manage Posts</a></li>
+            <li><a href="#manageComments">Manage Comments</a></li>
+        </ul>
+    </nav>
+    
+    <div id="adminContent">
+        <!-- Manage Users Section -->
+        <section id="manageUsers">
+            <h2>Manage Users</h2>
+            <div>
+                <input type="text" id="searchUser" placeholder="Search by username">
+                <button onclick="searchUser()">Search</button>
+            </div>
+            <div id="userList">
+                <!-- Simulated user list -->
+                <div class="userItem">
+                    <p>Username: <span>john_doe</span> | Status: Active</p>
+                    <button onclick="banUser('john_doe')">Ban User</button>
+                    <button onclick="unBanUser('john_doe')">Unban User</button>
+                </div>
+                <div class="userItem">
+                    <p>Username: <span>jane_smith</span> | Status: Active</p>
+                    <button onclick="banUser('jane_smith')">Ban User</button>
+                    <button onclick="unBanUser('jane_smith')">Unban User</button>
+                </div>
+                <!-- Add more users here... -->
+            </div>
+        </section>
+
+        <!-- Manage Posts Section -->
+        <section id="managePosts">
+            <h2>Manage Posts</h2>
+            <div>
+                <input type="text" id="searchPost" placeholder="Search by post content">
+                <button onclick="searchPost()">Search</button>
+            </div>
+            <div id="postList">
+                <!-- Simulated post list -->
+                <div class="postItem">
+                    <p>Post: <span>Here's my first post!</span> | Posted by: john_doe</p>
+                    <button onclick="deletePost(1)">Delete Post</button>
+                </div>
+                <div class="postItem">
+                    <p>Post: <span>Learning JavaScript!</span> | Posted by: jane_smith</p>
+                    <button onclick="deletePost(2)">Delete Post</button>
+                </div>
+                <!-- Add more posts here... -->
+            </div>
+        </section>
+
+        <!-- Manage Comments Section -->
+        <section id="manageComments">
+            <h2>Manage Comments</h2>
+            <div>
+                <input type="text" id="searchComment" placeholder="Search by comment content">
+                <button onclick="searchComment()">Search</button>
+            </div>
+            <div id="commentList">
+                <!-- Simulated comment list -->
+                <div class="commentItem">
+                    <p>Comment: <span>This is a great post!</span> | By: john_doe</p>
+                    <button onclick="deleteComment(1)">Delete Comment</button>
+                </div>
+                <div class="commentItem">
+                    <p>Comment: <span>JavaScript is awesome!</span> | By: jane_smith</p>
+                    <button onclick="deleteComment(2)">Delete Comment</button>
+                </div>
+                <!-- Add more comments here... -->
+            </div>
+        </section>
+    </div>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Chat Group Control</title>
+    <link rel="stylesheet" href="Admin-chat.style.css">
+</head>
+<body>
+    <header>
+        <h1>ADMIN GROUP COTROL</h1>
+        <button onclick="logoutAdmin()">Logout</button>
+        <h3> <!-- Send Message Section -->
+            <section id="sendMessageSection">
+                <h2>ANNOUNCE</h2>
+               <div> <textarea id="messageInput" placeholder="Type Your Announcement"></textarea><button onclick="sendAnnouncement()">Send</button></div>
+                    </h3>
+    </header>
+    
+    <!-- Sidebar with Navigation Links -->
+    <nav id="sidebar">
+        <ul>
+            <li><a href="#Manage Groups"> Manage Groups</a></li>
+            <li><a href="#manageUsers">   Manage Users</a></li>
+            <li><a href="#manageAdmins">  Manage Admins</a></li>
+            <li><a href="#manageMessages">Manage Messages</a></li>
+        </ul>
+    </nav>
+    
+    <div id="adminContent">
+        <!-- Manage Admins Section -->
+        <section id="manageAdmins">
+            <h2>Manage Admins</h2>
+            <div id="adminList">
+                <!-- Simulated Admins -->
+                <div class="adminItem" id="admin-1">
+                    <p>Username: Sabini Seba<BR> Role: Admin</p>
+                    <!-- Main admin won't be editable or visible to users -->
+                    <button disabled>Edit Admin</button>
+                    <button disabled>Delete Admin</button>
+                </div>
+                <div class="adminItem" id="admin-2">
+                    <p>Username: <span>Dr.Felix Sanga</span> | Role: Admin</p>
+                    <button onclick="editAdmin('john_doe_admin')">Edit Admin</button>
+                    <button onclick="deleteAdmin('john_doe_admin')">Delete Admin</button>
+                </div>
+                <div class="adminItem" id="admin-3">
+                    <p>Username: <span>Hayatu Dicko</span> | Role: Admin</p>
+                    <button onclick="editAdmin('Hayatu_Dicko_admin')">Edit Admin</button>
+                    <button onclick="deleteAdmin('Hayatu_Dicko_admin')">Delete Admin</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other sections remain the same as previous -->
+        <section id="manageGroups">
+            <h2>Manage Groups</h2>
+            <div>
+                <input type="text" id="searchGroup" placeholder="Search by group name">
+                <button onclick="searchGroup()">Search</button>
+            </div>
+            <div id="groupList">
+                <div class="groupItem">
+                    <p>Group Name: <span>AFRICANS REVOLUTIONALISTS & THEORITS</span></p>
+                    <button onclick="viewGroup(1)">View Group</button>
+                </div>
+                <div class="groupItem">
+                    <p>Group Name: <span>BOOKS LIBRARY ADVERTISING</span></p>
+                    <button onclick="viewGroup(2)">View Group</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Manage Users Section -->
+        <section id="manageUsers">
+            <h2>Manage Users</h2>
+            <div>
+                <input type="text" id="searchUser" placeholder="Search by username">
+                <button onclick="searchUser()">Search</button>
+            </div>
+            <div id="userList">
+                <!-- Regular users, excluding main admin -->
+                <div class="userItem">
+                    <p>Username: <span>john_doe</span> | Status: Active</p>
+                    <button onclick="banUser('john_doe')">Ban User</button>
+                    <button onclick="unBanUser('john_doe')">Unban User</button>
+                </div>
+                <div class="userItem">
+                    <p>Username: <span>Hayatu_Dicko</span> | Status: Active</p>
+                    <button onclick="banUser('jane_smith')">Ban User</button>
+                    <button onclick="unBanUser('jane_smith')">Unban User</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Send Message Section -->
+        <section id="sendMessageSection">
+            <h2>Send a Message</h2>
+            <textarea id="messageInput" placeholder="Type a message"></textarea> <div>
+                <input type="file" id="fileInput" multiple>
+                <button onclick="sendMessage()">Send Message</button>
+            </div>
+           
+        </section>
+    </div>
+
+    <script src="admin-chat-script.js"></script>
+</body>
+</html>

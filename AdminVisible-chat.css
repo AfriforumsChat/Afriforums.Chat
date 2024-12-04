@@ -1,0 +1,43 @@
+/* Styling for Admin Management */
+.adminItem {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+.adminItem p {
+    margin: 0;
+}
+h3 {
+    background-color: rgb(3, 244, 3);
+    width: 150%;
+    text-align: center;
+    padding: 10px;
+    align-content: center;
+    position: flex;
+    scroll-margin-left: 10%;
+    box-shadow: #fa0707;
+
+}
+
+
+button {
+    background-color: #100495;
+    color: white;
+    border: #041173;
+    padding: 16px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 14px;
+    border-radius: 40%;
+}
+
+button:hover {
+    background-color: #041173;
+}
+
+button:disabled {
+    background-color: #fcfbfb;
+    cursor: not-allowed;
+}

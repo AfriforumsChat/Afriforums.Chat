@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="AdminVisible-chat.html">
+    <link rel="stylesheet" href="AdminVisible-chat-server.js">
+    <link rel="stylesheet" href="AdminVisible-chat.css">
+    <link rel="stylesheet" href="register.html">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Afriforums.Chat </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section class="posts-section">
+            <h2>Latest Posts</h2>
+            <div class="post" id="post1">
+                <div class="post-header">
+               <button class="btn btn-primary"><a href=""><h3>Admin</h3></a></button>
+                    
+                    <p>Location: United Republic of Tanzania</p>
+                </div>
+                <p class="post-content">This is my Village World. I can chat and share different items and experiences</p>
+                <button class="like-button" onclick="likePost('post1')">Like</button>
+                <button class="comment-button" onclick="openComments('post1')">Comment</button>
+                <button class="share-button">Share</button>
+                <div class="comments" id="comments-post1"></div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Afriforums.Chat. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+
+</html>

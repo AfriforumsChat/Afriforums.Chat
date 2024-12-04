@@ -1,0 +1,103 @@
+CSS (styles.css)
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0848f6f1;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: rgba(240, 243, 240, 0.958);
+    text-decoration: none;
+}
+
+.container {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.posts-section {
+    background-color: #06d0fdfa;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(35, 6, 255, 0.958);
+}
+
+.post {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-header h3 {
+    margin: 0;
+    font-size: 2.5em;
+    font-synthesis-style: ;
+    box-decoration-break: clone;
+    color: #0bff03;
+    border-radius: 100px;
+    color: #02179f;
+
+}
+
+.post-header p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #31029f;
+    font-style: normal;
+    text-decoration: solid;
+    font: xx-large;
+}
+
+.post-content {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+button {
+    padding: 8px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #0d09f1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0303ba;
+    color: #02179f;
+}
+
+.comments {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+footer {
+    background-color: #fb0707f6;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
